@@ -1,0 +1,11 @@
+video,real,previsto,frame_detectado,resultado
+adl-01-cam0,adl,adl,,VN (acertou normal)
+adl-02-cam0,adl,adl,,VN (acertou normal)
+adl-03-cam0,adl,adl,,VN (acertou normal)
+adl-04-cam0,adl,adl,,VN (acertou normal)
+adl-05-cam0,adl,adl,,VN (acertou normal)
+fall-01-cam0,queda,queda,96.0,VP (acertou queda)
+fall-02-cam0,queda,queda,60.0,VP (acertou queda)
+fall-03-cam0,queda,adl,,FN (perdeu queda)
+fall-04-cam0,queda,adl,,FN (perdeu queda)
+fall-05-cam0,queda,queda,98.0,VP (acertou queda)

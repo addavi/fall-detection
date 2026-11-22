@@ -88,7 +88,7 @@ for pasta in sorted(Path("outputs").iterdir()):
         "classe": "queda" if eh_queda else "adl",
         "vel_max": feats["vel_vertical"].max(),
         "angulo_max": feats["angulo_tronco"].max(),
-        "angulo_final": feats["angulo_tronco"].iloc[-15:].mean(),
+        "angulo_final": feats["angulo_tronco"].dropna().iloc[-15:].mean(),
     })
 
 ax[0].set_ylabel("Ângulo tronco (°)")
