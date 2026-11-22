@@ -62,3 +62,9 @@ print(f"Precisão: {vp / (vp + fp):.2f}" if vp + fp else "Precisão: n/a")
 
 Path("docs").mkdir(exist_ok=True)
 tabela.to_csv("docs/resultado_regra.csv", index=False)
+
+for nome in ["fall-03-cam0", "fall-04-cam0"]:
+    f = pd.read_csv(f"outputs/{nome}/features.csv", index_col="frame")
+    pico = f["vel_vertical"].idxmax()
+    print(f"\n{nome}: pico de velocidade no frame {pico}")
+    print(f.loc[pico : pico + 40 : 5].round(2))

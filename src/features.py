@@ -102,9 +102,3 @@ plt.savefig("docs/comparativo_features.png", dpi=150)
 tabela = pd.DataFrame(resumo).round(2)
 print(tabela.to_string(index=False))
 tabela.to_csv("docs/resumo_features.csv", index=False)
-
-for nome in ["fall-03-cam0", "fall-04-cam0"]:
-    f = pd.read_csv(f"outputs/{nome}/features.csv", index_col="frame")
-    pico = f["vel_vertical"].idxmax()
-    print(f"\n{nome}: pico de velocidade no frame {pico}")
-    print(f.loc[pico : pico + 40 : 5].round(2))   # um frame a cada 5
