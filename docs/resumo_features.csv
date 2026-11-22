@@ -1,0 +1,11 @@
+video,classe,vel_max,angulo_max,angulo_final
+adl-01-cam0,adl,0.29,50.19,42.53
+adl-02-cam0,adl,0.31,8.46,3.7
+adl-03-cam0,adl,0.34,25.93,16.09
+adl-04-cam0,adl,0.08,89.84,13.34
+adl-05-cam0,adl,0.2,17.28,2.42
+fall-01-cam0,queda,0.6,75.7,20.17
+fall-02-cam0,queda,0.49,89.43,83.83
+fall-03-cam0,queda,0.63,68.36,51.22
+fall-04-cam0,queda,0.83,81.36,
+fall-05-cam0,queda,0.77,88.64,75.87
